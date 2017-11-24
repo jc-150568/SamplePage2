@@ -13,7 +13,7 @@ using ZXing.Net.Mobile.Forms;
 namespace SamplePage
 {
     
-    public partial class CameraPage : ContentPage
+    async partial class CameraPage : ContentPage
     {
         public CameraPage()
         {
@@ -25,7 +25,7 @@ namespace SamplePage
 
             // スキャナページを表示
             await Navigation.PushAsync(scanPage);
-
+            
             scanPage.OnScanResult += (result) =>
             {
                 // スキャン停止
