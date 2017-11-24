@@ -13,9 +13,9 @@ using ZXing.Net.Mobile.Forms;
 namespace SamplePage
 {
     
-    async partial class CameraPage : ContentPage
+    public partial class CameraPage : ContentPage
     {
-        public CameraPage()
+        async CameraPage()
         {
             var scanPage = new ZXingScannerPage()
             {
