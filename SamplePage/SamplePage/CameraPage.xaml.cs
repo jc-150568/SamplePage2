@@ -15,7 +15,12 @@ namespace SamplePage
     
     public partial class CameraPage : ContentPage
     {
-        async CameraPage()
+        public CameraPage()
+        {
+            InitializeComponent();
+        }
+
+        async void ScanButtonClicked(object sender, EventArgs s)
         {
             var scanPage = new ZXingScannerPage()
             {
@@ -25,7 +30,7 @@ namespace SamplePage
 
             // スキャナページを表示
             await Navigation.PushAsync(scanPage);
-            
+
             scanPage.OnScanResult += (result) =>
             {
                 // スキャン停止
@@ -40,6 +45,7 @@ namespace SamplePage
 
                 //scanedData.Add(result.Text);
             };
+
         }
-    }
+}
 }
