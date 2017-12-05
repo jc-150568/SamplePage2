@@ -22,6 +22,7 @@ namespace SamplePage
             var picker2 = new Picker { Title = "Select a monkey" };
             if (this.picker.SelectedIndex == 0)
             {
+                picker2.Items.Clear();
                 picker2.Items.Add("Baboon");
                 picker2.Items.Add("Capuchin Monkey");
                 picker2.Items.Add("Blue Monkey");
@@ -30,7 +31,19 @@ namespace SamplePage
                 picker2.Items.Add("Howler Monkey");
                 picker2.Items.Add("Japanese Macaque");
             }
-            
+
+            if (this.picker.SelectedIndex == 1)
+            {
+                picker2.Items.Clear();
+                picker2.Items.Add("2Baboon");
+                picker2.Items.Add("2Capuchin Monkey");
+                picker2.Items.Add("2Blue Monkey");
+                picker2.Items.Add("2Squirrel Monkey");
+                picker2.Items.Add("2Golden Lion Tamarin");
+                picker2.Items.Add("2Howler Monkey");
+                picker2.Items.Add("2Japanese Macaque");
+            }
+
 
         }
     }
