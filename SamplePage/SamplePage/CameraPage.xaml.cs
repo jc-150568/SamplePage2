@@ -45,7 +45,6 @@ namespace SamplePage
 
                 //scanedData.Add(result.Text);
             };
-
         }
-}
+    }
 }

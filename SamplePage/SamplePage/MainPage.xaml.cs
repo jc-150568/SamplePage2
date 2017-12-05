@@ -13,5 +13,19 @@ namespace SamplePage
         {
             InitializeComponent();
         }
+
+        private void Common(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CommonPage());
+        }
+        private void Backup(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new BackupPage());
+        }
+        private void Help(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HelpPage());
+        }
+
     }
 }
