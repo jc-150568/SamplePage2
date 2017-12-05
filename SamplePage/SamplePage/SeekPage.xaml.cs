@@ -19,7 +19,6 @@ namespace SamplePage
 
         private void OnSelectedIndexChanged(object sender, EventArgs eventArgs)
         { 
-            var picker2 = new Picker { Title = "Select a monkey" };
             if (this.picker.SelectedIndex == 0)
             {
                 picker2.Items.Clear();
