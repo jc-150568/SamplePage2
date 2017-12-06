@@ -47,7 +47,7 @@ namespace SamplePage
                 });
 
                 scanedData.Add(result.Text);
-                Zx1.Text = scanedData;
+                Zx1.Text = ToString(scanedData);
                 
             };
         }
