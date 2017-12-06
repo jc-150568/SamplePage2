@@ -18,7 +18,7 @@ namespace SamplePage
         }
 
         private void OnSelectedIndexChanged(object sender, EventArgs eventArgs)
-        {
+        {/*
             if (this.picker.SelectedIndex == 0)
             {
                 picker2.Items.Clear();
@@ -53,7 +53,7 @@ namespace SamplePage
                 picker2.Items.Add("3Golden Lion Tamarin");
                 picker2.Items.Add("3Howler Monkey");
                 picker2.Items.Add("3Japanese Macaque");
-            }
+            }*/
         }
     }
 

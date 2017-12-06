@@ -7,7 +7,7 @@
         <StackLayout>
             <SearchBar Placeholder = "Search"/>
             <StackLayout Orientation="Horizontal">
-                <Picker VerticalOptions="Center"
+              <!--  <Picker VerticalOptions="Center"
                     HorizontalOptions="Center" WidthRequest="300" Title="選択してください">
                     <Picker.Items>
                         <x:String>最新</x:String>
@@ -25,7 +25,7 @@
                 <Picker WidthRequest="300" Title="子カテゴリ" x:Name="picker2" >
                     <Picker.Items>
                     </Picker.Items>
-                </Picker>
+                </Picker> -->
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
