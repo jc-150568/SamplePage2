@@ -4,8 +4,9 @@
              x:Class="SamplePage.SeekPage"
              Title="楽天で探す">
     <ContentPage.Content>
-        <StackLayout >
+        <StackLayout>
             <SearchBar Placeholder = "Search"/>
+            <StackLayout Orientation="Horizontal">
             <Picker VerticalOptions="Center"
                     HorizontalOptions="Center" WidthRequest="300" Title="選択してください">
                 <Picker.Items>
@@ -14,7 +15,7 @@
                     <x:String>週間</x:String>
                 </Picker.Items>
             </Picker>
-            <Picker WidthRequest="300" Title="親カテゴリ" SelectedIndexChanged="OnSelectedIndexChanged" x:Name="picker" >
+            <Picker WidthRequest="" Title="親カテゴリ" SelectedIndexChanged="OnSelectedIndexChanged" x:Name="picker" >
                 <Picker.Items>
                     <x:String >小説</x:String>
                     <x:String>漫画</x:String>
@@ -23,8 +24,9 @@
             </Picker>
             <Picker WidthRequest="300" Title="子カテゴリ" x:Name="picker2" >
                 <Picker.Items>
-                </Picker.Items>
+            </Picker.Items>
             </Picker>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

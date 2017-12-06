@@ -43,7 +43,17 @@ namespace SamplePage
                 picker2.Items.Add("2Japanese Macaque");
             }
 
-
+            if (this.picker.SelectedIndex == 2)
+            {
+                picker2.Items.Clear();
+                picker2.Items.Add("3Baboon");
+                picker2.Items.Add("3Capuchin Monkey");
+                picker2.Items.Add("3Blue Monkey");
+                picker2.Items.Add("3Squirrel Monkey");
+                picker2.Items.Add("3Golden Lion Tamarin");
+                picker2.Items.Add("3Howler Monkey");
+                picker2.Items.Add("3Japanese Macaque");
+            }
         }
     }
 

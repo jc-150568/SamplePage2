@@ -15,9 +15,12 @@ namespace SamplePage
     
     public partial class CameraPage : ContentPage
     {
+        ObservableCollection<string> scanedData;
         public CameraPage()
         {
             InitializeComponent();
+            scanedData = new ObservableCollection<string>();
+            this.BindingContext = scanedData;
         }
 
         async void ScanButtonClicked(object sender, EventArgs s)
@@ -43,7 +46,9 @@ namespace SamplePage
                     await DisplayAlert("スキャン完了", result.Text, "OK");
                 });
 
-                //scanedData.Add(result.Text);
+                scanedData.Add(result.Text);
+                Zx1.Text = scanedData;
+                
             };
         }
     }
