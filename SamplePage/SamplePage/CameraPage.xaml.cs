@@ -46,7 +46,7 @@ namespace SamplePage
                     await DisplayAlert("スキャン完了", result.Text, "OK");
                 });
 
-                scanedData.Add(result.Text);
+                //scanedData.Add(result.Text);
                 //scanedData = Convert.ToString(scanedData);
                 //Zx1.Text = scanedData;
 
