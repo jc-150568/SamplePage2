@@ -12,14 +12,14 @@ using ZXing.Net.Mobile.Forms;
 
 namespace SamplePage
 {
-    
+
     public partial class CameraPage : ContentPage
     {
         //ObservableCollection<string> scanedData;
         public CameraPage()
         {
             InitializeComponent();
-           // scanedData = new ObservableCollection<string>();
+            // scanedData = new ObservableCollection<string>();
             //this.BindingContext = scanedData;
         }
 
@@ -49,7 +49,7 @@ namespace SamplePage
                 scanedData.Add(result.Text);
                 //scanedData = Convert.ToString(scanedData);
                 //Zx1.Text = scanedData;
-                
+
             };
         }
     }

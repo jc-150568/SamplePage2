@@ -18,7 +18,7 @@ namespace SamplePage
         }
 
         private void OnSelectedIndexChanged(object sender, EventArgs eventArgs)
-        { 
+        {
             if (this.picker.SelectedIndex == 0)
             {
                 picker2.Items.Clear();
