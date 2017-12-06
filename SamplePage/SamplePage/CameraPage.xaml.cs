@@ -12,15 +12,12 @@ using ZXing.Net.Mobile.Forms;
 
 namespace SamplePage
 {
-
+    
     public partial class CameraPage : ContentPage
     {
-        //ObservableCollection<string> scanedData;
         public CameraPage()
         {
             InitializeComponent();
-            // scanedData = new ObservableCollection<string>();
-            //this.BindingContext = scanedData;
         }
 
         async void ScanButtonClicked(object sender, EventArgs s)
@@ -47,9 +44,6 @@ namespace SamplePage
                 });
 
                 //scanedData.Add(result.Text);
-                //scanedData = Convert.ToString(scanedData);
-                //Zx1.Text = scanedData;
-
             };
         }
     }
